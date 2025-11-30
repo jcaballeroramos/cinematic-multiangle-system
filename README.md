@@ -389,94 +389,103 @@ Mismo encuadre del sujeto, diferentes distancias focales extremas (8mm fisheye a
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present.
 
-Generate a cohesive 3x3 grid showing the SAME SUBJECT at the SAME SIZE in frame, but photographed with 9 DIFFERENT FOCAL LENGTHS. The visual difference between each panel must be DRAMATIC and OBVIOUS.
+Generate a cohesive 3x3 grid simulating photographs taken with 9 DIFFERENT FOCAL LENGTHS. Each panel must show DRAMATICALLY DIFFERENT visual characteristics.
 
 Each panel MUST include a visible TEXT LABEL indicating the focal length.
 
 STRICT RULES:
-- DO NOT invent or add ANY new elements not present in the original image.
-- DO NOT change poses, clothing, or subject identity.
-- The subject STAYS THE SAME SIZE in every panel — only the background and distortion change.
-- Each panel must look CLEARLY DIFFERENT from the others.
+- DO NOT change subject identity, poses, or clothing.
+- Each panel must be VISUALLY DISTINCT from the others.
+- Focus on: amount of background visible, depth of field/bokeh, and perspective.
 
-ROW 1 — FISHEYE AND ULTRA WIDE (extreme distortion, huge background):
+ROW 1 — WIDE ANGLE LENSES:
 
-1. (8mm Fisheye) CIRCULAR FISHEYE EFFECT:
-   - Visible circular/barrel distortion warping the ENTIRE frame
-   - Straight lines appear CURVED like a sphere
-   - Subject's face appears BULGING if close to camera
-   - You can see almost 180° of the environment
-   - The background wraps around the edges
-   - Everything at the edges is stretched and curved
+1. (8mm Fisheye):
+   - CIRCULAR VIGNETTE framing the image
+   - Strong BARREL DISTORTION — edges curve inward
+   - EVERYTHING in focus (deep depth of field)
+   - Show MAXIMUM background — entire environment visible
+   - Exaggerated sense of space and distance
 
-2. (14mm Ultra Wide) STRONG RECTILINEAR DISTORTION:
-   - Very wide field of view showing MASSIVE amount of background
-   - Objects near camera edges appear STRETCHED horizontally
-   - Strong sense of DEPTH — background looks very FAR away
-   - Subject's proportions slightly exaggerated (bigger nose if facing camera)
-   - Interior of car should show MUCH more — seats, windows, ceiling all visible
+2. (14mm Ultra Wide):
+   - VERY WIDE field of view
+   - Show MUCH MORE of the car interior — ceiling, doors, windows, seats all visible
+   - Deep focus — background SHARP and clear
+   - Subject appears smaller in frame with lots of environment
+   - Stretched perspective at edges
 
-3. (24mm Wide) MODERATE WIDE ANGLE:
-   - Still shows more background than normal
-   - Slight stretching at frame edges
-   - Background appears DISTANT
-   - Good environmental context
-   - Some perspective exaggeration on close objects
+3. (24mm Wide):
+   - Wide environmental shot
+   - MORE background visible than normal
+   - Everything relatively in focus
+   - Natural but expansive feeling
+   - Good context of location
 
-ROW 2 — NORMAL RANGE (natural to slight compression):
+ROW 2 — NORMAL TO PORTRAIT:
 
-4. (50mm Standard) NEUTRAL BASELINE:
-   - NO distortion — this is how human eye sees
+4. (50mm Standard):
+   - NEUTRAL reference — normal human vision
+   - Moderate background visible
+   - Moderate depth of field
    - Natural proportions
-   - Normal background distance
-   - Reference point for comparison
+   - Balanced framing
 
-5. (85mm Portrait) SLIGHT COMPRESSION BEGINS:
-   - Background starts to appear CLOSER
-   - Facial features FLATTENED slightly (flattering)
-   - Less background visible than 50mm
-   - Subject more isolated from environment
-   - Classic portrait look
+5. (85mm Portrait):
+   - LESS background visible
+   - Background starts to get SOFT/BLURRY (shallow DOF begins)
+   - Subject more prominent
+   - Flattering perspective
+   - Some bokeh on background
 
-6. (135mm Telephoto) NOTICEABLE COMPRESSION:
-   - Background clearly COMPRESSED — appears closer to subject
-   - Subject appears more 2D/flat
+6. (135mm Telephoto):
+   - Subject FILLS more of the frame
+   - Background is BLURRY (obvious bokeh)
    - Much less environment visible
+   - Compressed, flatter look
    - Strong subject isolation
 
-ROW 3 — EXTREME TELEPHOTO (maximum compression, flat backgrounds):
+ROW 3 — EXTREME TELEPHOTO:
 
-7. (200mm Tele) STRONG COMPRESSION:
-   - Background appears to be RIGHT BEHIND subject
-   - Objects far away appear LARGE and close
-   - Very flat, almost no depth perception
-   - Subject and background seem on same plane
+7. (200mm Tele):
+   - Subject very prominent in frame
+   - Background is VERY BLURRY — strong bokeh
+   - Minimal environment visible
+   - Flat, compressed perspective
+   - Subject isolated from background
 
-8. (400mm Super Tele) EXTREME COMPRESSION:
-   - Background COMPLETELY FLATTENED against subject
-   - Distant objects appear SAME SIZE as nearby ones
-   - No sense of depth at all
-   - Surveillance/paparazzi look
-   - Only subject visible, environment compressed into flat wall
+8. (400mm Super Tele):
+   - TIGHT framing on subject
+   - Background is EXTREMELY BLURRY — creamy bokeh
+   - Almost no environment visible
+   - Very flat/2D appearance
+   - Maximum subject isolation
 
-9. (600mm Ultra Tele) MAXIMUM COMPRESSION:
-   - Background is a FLAT WALL directly behind subject
-   - All depth eliminated
-   - Extreme isolation
-   - Distant buildings/objects appear GIANT and pressed against subject
-   - Like looking through a telescope
+9. (600mm Ultra Tele):
+   - VERY TIGHT crop on faces
+   - Background is COMPLETELY BLURRED — smooth bokeh wall
+   - No environment context at all
+   - Extremely flat perspective
+   - Paparazzi/surveillance aesthetic
 
-THE KEY DIFFERENCES THAT MUST BE VISIBLE:
-- 8mm: Curved distortion, spherical warping, 180° view
-- 14mm-24mm: Wide view, stretched edges, distant background
-- 50mm: Normal, no distortion
-- 135mm-200mm: Background getting closer, flatter image
-- 400mm-600mm: Background is flat wall, no depth, extreme compression
+KEY VISUAL CHANGES THAT MUST BE OBVIOUS:
 
-If the 9 panels look similar, YOU HAVE FAILED. Each must be dramatically different.
+WIDE (8-24mm):
+→ SHARP background (everything in focus)
+→ LOTS of environment visible
+→ Subject SMALLER in frame
+
+TELEPHOTO (200-600mm):
+→ BLURRY background (strong bokeh)
+→ MINIMAL environment visible  
+→ Subject LARGER/tighter in frame
+
+The progression from 8mm to 600mm should show:
+- Background going from SHARP to COMPLETELY BLURRED
+- Environment going from MAXIMUM to NONE
+- Framing going from WIDE to VERY TIGHT
 </instruction>
 
-OUTPUT: A professional 3x3 grid with 9 DRAMATICALLY DIFFERENT optical effects. Wide shots MUST show curved distortion and vast backgrounds. Telephoto shots MUST show completely flat, compressed backgrounds where distant objects appear to touch the subject. The difference between 8mm and 600mm should be EXTREME and OBVIOUS.
+OUTPUT: A 3x3 grid where each panel is DRAMATICALLY DIFFERENT. Wide shots must show sharp backgrounds with lots of environment. Telephoto shots must show extremely blurry backgrounds with tight framing on the subject. The difference between panels must be OBVIOUS.
 ```
 
 
