@@ -6,7 +6,7 @@ ArtefactoFilms | 30/11/2025
 
 ---
 
-Sistema de prompts para generar **63 ángulos cinematográficos** de cualquier imagen, organizados en 7 grids de 3×3.
+Sistema de prompts para generar **72 ángulos cinematográficos** de cualquier imagen, organizados en 8 grids de 3×3.
 
 Mantiene coherencia total: misma ropa, misma pose, mismo entorno, misma luz. Solo cambia el ángulo de cámara.
 
@@ -14,9 +14,13 @@ Mantiene coherencia total: misma ropa, misma pose, mismo entorno, misma luz. Sol
 
 ![Original](img/img_original.png)
 
+
+
 ---
 
-## Los 7 Sets
+
+
+## Los 8 Sets
 
 | Set | Nombre | Qué cubre |
 |:---:|--------|-----------|
@@ -27,8 +31,13 @@ Mantiene coherencia total: misma ropa, misma pose, mismo entorno, misma luz. Sol
 | 5 | Dutch Angles | Horizonte inclinado (15°, 30°, 45°) |
 | 6 | Focal Length | Mismo ángulo, diferentes lentes (wide, normal, tele) |
 | 7 | Lighting Variations | Mismo ángulo, diferente iluminación |
+| 8 | Color Grading / Time of Day | Mismo ángulo, diferente color y hora del día |
+
+
 
 ---
+
+
 
 ## Glosario de planos
 
@@ -47,15 +56,19 @@ Mantiene coherencia total: misma ropa, misma pose, mismo entorno, misma luz. Sol
 | **Zenith** | Cenital | Cámara encima apuntando 90° abajo. Vista de pájaro. |
 | **Dutch Angle** | Plano holandés | Horizonte inclinado. Sensación de tensión, desorientación. |
 
----
+
 
 ---
+---
+
+
 
 ## SET 1 — Classic Cinematic
 
 Planos clásicos de cine desde el eje frontal.
 
 ![Set 1](img/img_set1.jpeg)
+
 
 #### Estructura del grid
 
@@ -65,9 +78,10 @@ Planos clásicos de cine desde el eje frontal.
 | **Fila 2** | MS — Medio | MCU — Medio corto | CU — Primer plano |
 | **Fila 3** | ECU — Primerísimo | Low — Contrapicado | High — Picado |
 
+
 #### Prompt
 
-```md
+```
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
 
@@ -102,15 +116,19 @@ The depth of field must shift realistically: deep focus in wide shots, shallow b
 OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels. Photorealistic textures, consistent cinematic color grading, and correct framing. NO invented elements.
 ```
 
----
+
 
 ---
+---
+
+
 
 ## SET 2 — Three-Quarter 45°
 
 Variaciones con rotación lateral de cámara a 45°.
 
 ![Set 2](img/img_set2.jpeg)
+
 
 #### Estructura del grid
 
@@ -120,9 +138,10 @@ Variaciones con rotación lateral de cámara a 45°.
 | **Fila 2** | MS frontal (ref.) | MCU 45° retrato 3/4 | CU -10° desde arriba |
 | **Fila 3** | ECU macro | Low 45° diagonal | High 45° diagonal |
 
+
 #### Prompt
 
-```tex
+```
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
 
@@ -155,15 +174,19 @@ The depth of field must shift realistically. Maintain consistent cinematic light
 OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels with three-quarter and diagonal camera positions. Photorealistic textures, consistent color grading. NO invented elements. Same subjects, same scene, ONLY camera angle changes.
 ```
 
----
+
 
 ---
+---
+
+
 
 ## SET 3 — Drone / Reverse / Low
 
 Ángulos extremos: aéreos, reversos, y desde el suelo.
 
 ![Set 3](img/img_set3.jpeg)
+
 
 #### Estructura del grid
 
@@ -173,9 +196,10 @@ OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels with th
 | **Fila 2 — Reverse** | Reverse MLS | Reverse MS | Reverse CU |
 | **Fila 3 — Suelo** | Low 30° | Low 60° | Nadir 90° |
 
+
 #### Prompt
 
-```tex
+```
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
 
@@ -209,15 +233,19 @@ Depth of field and lighting must remain consistent with the original image.
 OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels with extreme vertical and reverse camera positions. Photorealistic textures, consistent color grading. NO invented elements. Same subjects, same scene, ONLY camera position changes.
 ```
 
----
+
 
 ---
+---
+
+
 
 ## SET 4 — Full Rear 180°
 
 La cámara rota completamente para ver a los sujetos **de espaldas**. Los sujetos no se dan vuelta.
 
 ![Set 4](img/img_set4.jpeg)
+
 
 #### Estructura del grid
 
@@ -229,9 +257,10 @@ La cámara rota completamente para ver a los sujetos **de espaldas**. Los sujeto
 
 **Nota:** El Set 3 Reverse muestra lo que está FRENTE a los sujetos. El Set 4 muestra las ESPALDAS — rotación física completa alrededor de ellos.
 
+
 #### Prompt
 
-```tex
+```
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
 
@@ -270,15 +299,19 @@ Depth of field must shift realistically. Lighting should be consistent with how 
 OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing the subjects from behind. Photorealistic textures, consistent color grading. NO invented elements. Same subjects, same pose, same clothing — ONLY viewed from the rear.
 ```
 
----
+
 
 ---
+---
+
+
 
 ## SET 5 — Dutch Angles
 
 Planos con horizonte inclinado. Crean tensión, desorientación, dinamismo o inestabilidad psicológica.
 
 ![Set 5](img/img_set5.jpeg)
+
 
 #### Estructura del grid
 
@@ -288,13 +321,16 @@ Planos con horizonte inclinado. Crean tensión, desorientación, dinamismo o ine
 | **Fila 2 — 30°** | LS Dutch 30° der | MS Dutch 30° izq | CU Dutch 30° der |
 | **Fila 3 — 45°** | LS Dutch 45° izq | MS Dutch 45° der | CU Dutch 45° izq |
 
+
 #### Prompt
 
-```ini
+```
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
 
 Generate a cohesive 3x3 grid "Dutch Angle Contact Sheet" featuring 9 distinct camera shots with TILTED HORIZON (Dutch angles) at varying degrees.
+
+Each panel MUST include a visible TEXT LABEL in the corner indicating the shot type (e.g., "LS Dutch 15° Left", "MS Dutch 30° Right", etc.).
 
 STRICT RULES:
 - DO NOT invent or add ANY new elements, objects, people, or details not present in the original image.
@@ -321,72 +357,141 @@ ROW 3 — EXTREME DUTCH (45° tilt):
 Depth of field and lighting must remain consistent with the original image. The tilt is ONLY on the camera's roll axis — not pan or pitch.
 </instruction>
 
-OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels with Dutch angle (canted) framing at 15°, 30°, and 45° tilts. Photorealistic textures, consistent color grading. NO invented elements. Same subjects, same scene, ONLY horizon tilt changes.
+OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 labeled panels with Dutch angle (canted) framing at 15°, 30°, and 45° tilts. Photorealistic textures, consistent color grading. NO invented elements. Same subjects, same scene, ONLY horizon tilt changes.
 ```
 
----
+
 
 ---
+---
+
+
 
 ## SET 6 — Focal Length Variations
 
-Mismo ángulo frontal (MS), diferentes distancias focales. Muestra cómo cambia la perspectiva y compresión.
+Mismo encuadre del sujeto, diferentes distancias focales extremas (8mm fisheye a 600mm). Muestra distorsión y compresión de perspectiva.
 
 ![Set 6](img/img_set6.jpeg)
+
 
 #### Estructura del grid
 
 | | Col 1 | Col 2 | Col 3 |
 |:--|:------|:------|:------|
-| **Fila 1 — Wide** | 16mm ultra wide | 24mm wide | 35mm moderate wide |
-| **Fila 2 — Normal** | 50mm normal | 85mm portrait | 105mm short tele |
-| **Fila 3 — Telephoto** | 135mm medium tele | 200mm telephoto | 300mm super tele |
+| **Fila 1 — Fisheye/Wide** | 8mm fisheye | 14mm ultra wide | 24mm wide |
+| **Fila 2 — Normal** | 50mm standard | 85mm portrait | 135mm tele |
+| **Fila 3 — Extreme Tele** | 200mm tele | 400mm super tele | 600mm ultra tele |
+
 
 #### Prompt
 
-```tex
+```
 <instruction>
-Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
+Analyze the entire composition of the input image. Identify ALL key subjects present.
 
-Generate a cohesive 3x3 grid "Focal Length Contact Sheet" featuring 9 shots of the SAME FRAMING (Medium Shot, waist-up) but captured with DIFFERENT FOCAL LENGTHS, showing how lens choice affects perspective distortion and background compression.
+Generate a cohesive 3x3 grid showing the SAME SUBJECT at the SAME SIZE in frame, but photographed with 9 DIFFERENT FOCAL LENGTHS. The visual difference between each panel must be DRAMATIC and OBVIOUS.
+
+Each panel MUST include a visible TEXT LABEL indicating the focal length.
 
 STRICT RULES:
-- DO NOT invent or add ANY new elements, objects, people, or details not present in the original image.
-- DO NOT change poses, clothing, props, or lighting.
-- The subjects remain in the EXACT same position and the framing (waist-up MS) stays consistent.
-- ONLY the focal length changes — affecting perspective distortion and background compression.
-- Maintain ABSOLUTE consistency across all 9 panels.
+- DO NOT invent or add ANY new elements not present in the original image.
+- DO NOT change poses, clothing, or subject identity.
+- The subject STAYS THE SAME SIZE in every panel — only the background and distortion change.
+- Each panel must look CLEARLY DIFFERENT from the others.
 
-ROW 1 — WIDE ANGLE LENSES (expanded perspective, more background, barrel distortion):
-1. (16mm Ultra Wide) Extreme wide angle. Strong barrel distortion near edges, exaggerated perspective, vast background visible, subject appears to have enlarged features closest to camera.
-2. (24mm Wide) Wide angle. Moderate distortion, expanded sense of space, more environmental context visible behind subject.
-3. (35mm Moderate Wide) Slight wide angle. Minimal distortion, natural but spacious feel, good balance of subject and environment.
+ROW 1 — FISHEYE AND ULTRA WIDE (extreme distortion, huge background):
 
-ROW 2 — NORMAL TO PORTRAIT LENSES (natural perspective):
-4. (50mm Normal) Standard lens. No distortion, perspective matches human eye, natural proportions, moderate background visibility.
-5. (85mm Portrait) Classic portrait lens. Slight background compression, flattering facial proportions, subject separated from background.
-6. (105mm Short Telephoto) Short tele. Noticeable background compression, shallow depth of field effect, subject isolated.
+1. (8mm Fisheye) CIRCULAR FISHEYE EFFECT:
+   - Visible circular/barrel distortion warping the ENTIRE frame
+   - Straight lines appear CURVED like a sphere
+   - Subject's face appears BULGING if close to camera
+   - You can see almost 180° of the environment
+   - The background wraps around the edges
+   - Everything at the edges is stretched and curved
 
-ROW 3 — TELEPHOTO LENSES (compressed perspective, isolated subject):
-7. (135mm Medium Telephoto) Background significantly compressed, subject flattened, strong isolation from environment.
-8. (200mm Telephoto) Strong compression, background appears much closer, very shallow depth of field, subject dominant.
-9. (300mm Super Telephoto) Extreme compression, background almost flattened against subject, maximum isolation, surveillance/paparazzi aesthetic.
+2. (14mm Ultra Wide) STRONG RECTILINEAR DISTORTION:
+   - Very wide field of view showing MASSIVE amount of background
+   - Objects near camera edges appear STRETCHED horizontally
+   - Strong sense of DEPTH — background looks very FAR away
+   - Subject's proportions slightly exaggerated (bigger nose if facing camera)
+   - Interior of car should show MUCH more — seats, windows, ceiling all visible
 
-All shots maintain the same subject size in frame (MS framing) — the camera distance changes to compensate for focal length while keeping consistent framing.
+3. (24mm Wide) MODERATE WIDE ANGLE:
+   - Still shows more background than normal
+   - Slight stretching at frame edges
+   - Background appears DISTANT
+   - Good environmental context
+   - Some perspective exaggeration on close objects
+
+ROW 2 — NORMAL RANGE (natural to slight compression):
+
+4. (50mm Standard) NEUTRAL BASELINE:
+   - NO distortion — this is how human eye sees
+   - Natural proportions
+   - Normal background distance
+   - Reference point for comparison
+
+5. (85mm Portrait) SLIGHT COMPRESSION BEGINS:
+   - Background starts to appear CLOSER
+   - Facial features FLATTENED slightly (flattering)
+   - Less background visible than 50mm
+   - Subject more isolated from environment
+   - Classic portrait look
+
+6. (135mm Telephoto) NOTICEABLE COMPRESSION:
+   - Background clearly COMPRESSED — appears closer to subject
+   - Subject appears more 2D/flat
+   - Much less environment visible
+   - Strong subject isolation
+
+ROW 3 — EXTREME TELEPHOTO (maximum compression, flat backgrounds):
+
+7. (200mm Tele) STRONG COMPRESSION:
+   - Background appears to be RIGHT BEHIND subject
+   - Objects far away appear LARGE and close
+   - Very flat, almost no depth perception
+   - Subject and background seem on same plane
+
+8. (400mm Super Tele) EXTREME COMPRESSION:
+   - Background COMPLETELY FLATTENED against subject
+   - Distant objects appear SAME SIZE as nearby ones
+   - No sense of depth at all
+   - Surveillance/paparazzi look
+   - Only subject visible, environment compressed into flat wall
+
+9. (600mm Ultra Tele) MAXIMUM COMPRESSION:
+   - Background is a FLAT WALL directly behind subject
+   - All depth eliminated
+   - Extreme isolation
+   - Distant buildings/objects appear GIANT and pressed against subject
+   - Like looking through a telescope
+
+THE KEY DIFFERENCES THAT MUST BE VISIBLE:
+- 8mm: Curved distortion, spherical warping, 180° view
+- 14mm-24mm: Wide view, stretched edges, distant background
+- 50mm: Normal, no distortion
+- 135mm-200mm: Background getting closer, flatter image
+- 400mm-600mm: Background is flat wall, no depth, extreme compression
+
+If the 9 panels look similar, YOU HAVE FAILED. Each must be dramatically different.
 </instruction>
 
-OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing the same Medium Shot framing captured with focal lengths from 16mm to 300mm. Photorealistic textures, consistent color grading. NO invented elements. Same subjects, same pose — ONLY focal length and resulting perspective changes.
+OUTPUT: A professional 3x3 grid with 9 DRAMATICALLY DIFFERENT optical effects. Wide shots MUST show curved distortion and vast backgrounds. Telephoto shots MUST show completely flat, compressed backgrounds where distant objects appear to touch the subject. The difference between 8mm and 600mm should be EXTREME and OBVIOUS.
 ```
 
----
+
 
 ---
+---
+
+
 
 ## SET 7 — Lighting Variations
 
 Mismo plano (MS frontal), diferentes esquemas de iluminación.
 
 ![Set 7](img/img_set7.jpeg)
+
 
 #### Estructura del grid
 
@@ -396,13 +501,16 @@ Mismo plano (MS frontal), diferentes esquemas de iluminación.
 | **Fila 2 — Dramatic** | Rim/backlight | Under lighting | Top lighting |
 | **Fila 3 — Mood** | High key | Low key | Silhouette |
 
+
 #### Prompt
 
-```tex
+```
 <instruction>
 Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
 
 Generate a cohesive 3x3 grid "Lighting Variations Contact Sheet" featuring 9 shots with the SAME FRAMING (Medium Shot, frontal) but with DIFFERENT LIGHTING SETUPS, showing how light direction and quality affects mood and dimension.
+
+Each panel MUST include a visible TEXT LABEL in the corner indicating the lighting setup (e.g., "Paramount", "Rembrandt", "Split", "Rim Light", "Low Key", etc.).
 
 STRICT RULES:
 - DO NOT invent or add ANY new elements, objects, people, or details not present in the original image.
@@ -430,16 +538,136 @@ ROW 3 — MOOD/EXPOSURE LIGHTING:
 Color temperature should remain consistent (unless silhouette). The subject's materials (skin, fabric, hair) should realistically respond to each lighting direction.
 </instruction>
 
-OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing the same Medium Shot with 9 different lighting setups. Photorealistic textures, accurate light behavior on materials. NO invented elements. Same subjects, same pose, same framing — ONLY lighting changes.
+OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 labeled panels showing the same Medium Shot with 9 different lighting setups. Photorealistic textures, accurate light behavior on materials. NO invented elements. Same subjects, same pose, same framing — ONLY lighting changes.
 ```
 
----
+
 
 ---
+---
+
+
+
+## SET 8 — Color Grading / Time of Day
+
+Mismo plano (MS frontal), diferentes tratamientos de color y momentos del día.
+
+![Set 8](img/img_set8.jpeg)
+
+
+#### Estructura del grid
+
+| | Col 1 | Col 2 | Col 3 |
+|:--|:------|:------|:------|
+| **Fila 1 — Day** | Golden Hour sunrise | Midday harsh | Golden Hour sunset |
+| **Fila 2 — Night** | Blue Hour | Moonlight | Sodium street light |
+| **Fila 3 — Looks** | Teal & Orange | Desaturated cold | High contrast B&W |
+
+
+#### Prompt
+
+```
+<instruction>
+Analyze the entire composition of the input image. Identify ALL key subjects present (whether it's a single person, a group/couple, a vehicle, or a specific object) and their spatial relationship/interaction.
+
+Generate a cohesive 3x3 grid "Color Grading & Time of Day Contact Sheet" featuring 9 shots with the SAME FRAMING (Medium Shot, frontal) but with DIFFERENT COLOR GRADES and TIME OF DAY lighting conditions.
+
+Each panel MUST include a visible TEXT LABEL in the corner indicating the look/time (e.g., "Golden Hour", "Blue Hour", "Teal & Orange", etc.).
+
+STRICT RULES:
+- DO NOT invent or add ANY new elements, objects, people, or details not present in the original image.
+- DO NOT change poses, clothing, props, or camera angle.
+- The subjects remain in the EXACT same position and framing.
+- ONLY the color grading, color temperature, and ambient light quality changes.
+- Maintain ABSOLUTE consistency of subject identity across all 9 panels.
+- The lighting direction can shift to match the time of day realistically.
+
+ROW 1 — DAYLIGHT VARIATIONS:
+
+1. (Golden Hour Sunrise) Early morning warm light:
+   - Color temperature: WARM golden/orange tones (around 3000K look)
+   - Soft, low-angle light from the side
+   - Long soft shadows
+   - Warm highlights on skin, golden rim light
+   - Sky/background tinted pink-orange if visible
+
+2. (Midday Harsh) Noon overhead sunlight:
+   - Color temperature: NEUTRAL white/slightly cool (5500K look)
+   - Hard, overhead light creating harsh shadows under eyes, nose, chin
+   - High contrast between lit and shadow areas
+   - Bright, washed-out highlights
+   - Squinting or strong facial shadows
+
+3. (Golden Hour Sunset) Late afternoon warm light:
+   - Color temperature: DEEP WARM amber/orange (2800K look)
+   - Rich, golden light from low angle
+   - Longer shadows than sunrise, deeper orange tones
+   - Skin appears bronzed and glowing
+   - Background bathed in warm light
+
+ROW 2 — NIGHT/LOW LIGHT VARIATIONS:
+
+4. (Blue Hour) Twilight just after sunset:
+   - Color temperature: COOL blue dominant (9000K+ look)
+   - Soft, diffused ambient light
+   - Deep blue shadows, no harsh contrasts
+   - Mysterious, melancholic mood
+   - Sky deep blue if visible, city lights beginning
+
+5. (Moonlight) Night with moon as key light:
+   - Color temperature: COLD blue-silver
+   - Very low light, high ISO grain acceptable
+   - Strong blue cast overall
+   - Pale, desaturated skin tones
+   - Dark shadows, silvery highlights
+   - Romantic or eerie night mood
+
+6. (Sodium Street Light) Urban night with orange artificial light:
+   - Color temperature: ORANGE monochromatic (sodium vapor look)
+   - Harsh orange/yellow cast on everything
+   - Dark shadows where light doesn't reach
+   - Urban, gritty, noir aesthetic
+   - Skin tones shifted heavily toward orange
+
+ROW 3 — CINEMATIC COLOR GRADES:
+
+7. (Teal & Orange) Blockbuster Hollywood look:
+   - Skin tones pushed toward ORANGE
+   - Shadows and backgrounds pushed toward TEAL/CYAN
+   - Complementary color contrast
+   - Saturated, punchy, commercial feel
+   - Popular in action films and posters
+
+8. (Desaturated Cold) Bleak, dramatic look:
+   - Overall DESATURATION (muted colors)
+   - Color temperature shifted COLD (blue undertones)
+   - Low saturation skin tones (pale, sickly)
+   - Crushed blacks, lifted shadows (milky blacks)
+   - War film / dystopian / serious drama aesthetic
+
+9. (High Contrast B&W) Classic black and white:
+   - FULLY DESATURATED — no color at all
+   - HIGH CONTRAST: deep blacks, bright whites
+   - Rich tonal range in midtones
+   - Dramatic, timeless, artistic feel
+   - Film noir / classic cinema aesthetic
+
+Each panel should dramatically change the mood and feeling while keeping the same composition.
+</instruction>
+
+OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 labeled panels showing the same Medium Shot with 9 different color grades and time-of-day lighting. Each panel must have a DRAMATICALLY DIFFERENT color palette and mood. Photorealistic textures. NO invented elements. Same subjects, same pose, same framing — ONLY color and light quality changes.
+```
+
+
+
+---
+---
+
+
 
 ## Mapa de cobertura
 
-```ini
+```
                         ARRIBA
                       Drone 90°
                           │
@@ -463,11 +691,16 @@ OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing
                         ABAJO
 
     + Dutch Angles (Set 5): Roll axis 15°/30°/45°
-    + Focal Length (Set 6): 16mm — 300mm
+    + Focal Length (Set 6): 8mm fisheye — 600mm ultra tele
     + Lighting (Set 7): 9 esquemas de luz
+    + Color/Time (Set 8): 9 grades y horas del día
 ```
 
+
+
 ---
+
+
 
 ## Resumen
 
@@ -478,11 +711,16 @@ OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing
 | Set 3 | Altura extrema | 9 planos drone/suelo/reverso |
 | Set 4 | Posición trasera | 9 planos de espalda |
 | Set 5 | Inclinación horizonte | 9 dutch angles (15°/30°/45°) |
-| Set 6 | Distancia focal | 9 lentes (16mm—300mm) |
+| Set 6 | Distancia focal | 9 lentes (8mm—600mm) |
 | Set 7 | Iluminación | 9 esquemas de luz |
-| **Total** | | **63 variaciones** |
+| Set 8 | Color / Hora del día | 9 grades y tiempos |
+| **Total** | | **72 variaciones** |
+
+
 
 ---
+
+
 
 ## Cómo usar
 
@@ -491,9 +729,13 @@ OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing
 3. Genera el grid 3×3
 4. Repite con los otros sets
 
-**Orden recomendado:** Set 1 → Set 2 → Set 3 → Set 4 → Set 5 → Set 6 → Set 7
+**Orden recomendado:** Set 1 → Set 2 → Set 3 → Set 4 → Set 5 → Set 6 → Set 7 → Set 8
+
+
 
 ---
+
+
 
 ## Checklist de coherencia
 
@@ -506,11 +748,15 @@ OUTPUT: A professional 3x3 cinematic storyboard grid containing 9 panels showing
 | Iluminación | Consistente (excepto Set 7) | Sombras inesperadas |
 | Props | Mismos objetos | Objetos añadidos/quitados |
 
+
+
 ---
+
+
 
 ## Archivos
 
-```ini
+```
 cinematic-multiangle-system/
 ├── README.md
 ├── LICENSE
@@ -522,8 +768,11 @@ cinematic-multiangle-system/
     ├── img_set4.jpeg
     ├── img_set5.jpeg
     ├── img_set6.jpeg
-    └── img_set7.jpeg
+    ├── img_set7.jpeg
+    └── img_set8.jpeg
 ```
+
+
 
 ---
 
